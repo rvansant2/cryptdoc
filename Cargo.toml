@@ -1,0 +1,18 @@
+[package]
+name = "cryptdoc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+aes-gcm = "0.10"           # AES-GCM encryption
+aes = "0.8"                # AES block cipher
+pbkdf2 = "0.12"            # Key derivation
+sha2 = "0.10"              # For HMAC/SHA256
+rand = "0.8"               # Random IV generation
+base64 = "0.22"            # For encoding key/IV
+anyhow = "1.0"             # Better error handling
+rpassword = "7.2"          # Securely prompt password
+serde_json = "1.0.140"     # For metadata versioning
+serde = { version = "1.0", features = ["derive"] }
+hmac = "0.12"
